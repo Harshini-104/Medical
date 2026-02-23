@@ -91,10 +91,11 @@ body {
 
   .nav-menu {
     position: absolute;
-    top: 75px;
+    top: 70px;
     right: 0px;
-    width: 320px;
-    background: linear-gradient(to bottom, rgb(177, 240, 242), white, rgb(177, 240, 242));
+    width: 350px;
+    height: 500px;
+    background: rgba(0, 152, 142, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 10px;
     padding: 50px;
@@ -111,7 +112,7 @@ body {
 
   .nav-menu ul li a {
     font-size: 16px;
-    color: rgb(1, 7, 74);
+    color: rgb(255, 255, 255);
   }
 
   .nav-menu.active {

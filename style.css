@@ -93,8 +93,8 @@ body {
     position: absolute;
     top: 70px;
     right: 0px;
-    width: 450px;
-    height: 800px;
+    width: 350px;
+    height: 500px;
     background: rgba(0, 152, 142, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 10px;

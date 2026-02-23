@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Auth</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <!-- Header -->
-  <header class="navbar">
-    <div class="nav-container">
+    <header class="navbar">
+        <div class="nav-container">
 
-      <div class="logo">
-        <a href=""><img src="./image/logo-removebg-preview.webp" alt="MediCare Logo"></a>
-      </div>
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.webp" alt="MediCare Logo"></a>
+            </div>
 
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./service.html">Services</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./dashboard.html">Dashboard</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./service.html">Services</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-      <div class="nav-btn">
-        <a href="./login.html" class="login-btn">Login</a>
-      </div>
+            <div class="nav-btn">
+                <a href="./login.html" class="login-btn">Login</a>
+            </div>
 
-      <div class="menu-toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-    </div>
-  </header>
+        </div>
+    </header>
 
     <div class="auth-wrapper">
 
@@ -127,13 +127,13 @@
 
     </script>
     <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
+        const toggle = document.querySelector(".menu-toggle");
+        const navMenu = document.querySelector(".nav-menu");
 
-    toggle.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
-    });
-  </script>
+        toggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
 </body>
 
 </html>
@@ -230,10 +230,11 @@
 
         .nav-menu {
             position: absolute;
-            top: 75px;
+            top: 70px;
             right: 0px;
-            width: 320px;
-            background: linear-gradient(to bottom, rgb(177, 240, 242), white, rgb(177, 240, 242));
+            width: 350px;
+            height: 500px;
+            background: rgba(0, 152, 142, 0.9);
             backdrop-filter: blur(10px);
             border-radius: 10px;
             padding: 50px;
@@ -250,7 +251,7 @@
 
         .nav-menu ul li a {
             font-size: 16px;
-            color: rgb(1, 7, 74);
+            color: rgb(255, 255, 255);
         }
 
         .nav-menu.active {
