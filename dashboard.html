@@ -6,6 +6,10 @@
 <title>Dashboard</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 
 <style>
 *{
@@ -20,6 +24,130 @@ body{
   background:#f1f5f9;
   height:100vh;
 }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(17, 1, 53, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;  
+  gap: 30px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.nav-menu a:hover {
+  padding: 8px 20px;
+  background: #0a8f8f;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav-btn {
+  margin-left: 20px;
+}
+
+.login-btn {
+  padding: 8px 20px;
+  background: #0a8f8f;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #066666;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 320px;
+    background: linear-gradient(to bottom, rgb(177, 240, 242), white, rgb(177, 240, 242));
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 40px;
+
+  }
+
+  .nav-menu ul li a {
+    font-size: 16px;
+    color: rgb(1, 7, 74);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-btn {
+    display: block;
+    margin-left: 0;
+  }
+
+  .login-btn {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: 38px;
+  }
+}
+
 
 
 .sidebar{
@@ -62,6 +190,7 @@ body{
   flex:1;
   display:flex;
   flex-direction:column;
+  padding-top: 80px;
 }
 
 
@@ -159,9 +288,7 @@ canvas{
 }
 
 
-/* ===== MEDIA QUERIES ===== */
 
-/* Tablets: 768px - 1024px */
 @media (max-width: 1024px) {
   body {
     flex-direction: column;
@@ -240,7 +367,7 @@ canvas{
   }
 }
 
-/* Mobile: 480px - 767px */
+
 @media (max-width: 767px) {
   body {
     flex-direction: column;
@@ -309,7 +436,7 @@ canvas{
   }
 }
 
-/* Extra Small Devices: <480px */
+
 @media (max-width: 480px) {
   .sidebar h2 {
     font-size: 14px;
@@ -346,17 +473,35 @@ canvas{
 
 <body>
 
-<div class="sidebar">
-  <h2>STACKLY</h2>  
-  <ul>
-    <a href="./index.html"><li>Home</li></a>
-    <a href="./about.html"><li>About</li></a>
-    <a href="./service.html"><li>Services</li></a>
-    <a href="./blog.html"><li>Blog</li></a>
-    <a href="./dashboard.html"><li>Dashboard</li></a>
-    <a href="./contact.html"><li>Contact</li></a>
-  </ul>
-</div>
+<!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <div class="logo">
+        <a href=""><img src="./image/logo-removebg-preview.webp" alt="MediCare Logo"></a>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-btn">
+        <a href="./login.html" class="login-btn">Login</a>
+      </div>
+
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </header>
 
 <div class="main">
 
@@ -469,6 +614,16 @@ backgroundColor:'#6366f1'
 options:{responsive:true,plugins:{legend:{display:false}}}
 });
 </script>
+
+<script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+
 
 </body>
 </html>
