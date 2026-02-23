@@ -37,7 +37,7 @@ body {
 
 .nav-menu ul {
   list-style: none;
-  display: flex;
+  display: flex;  
   gap: 30px;
 }
 
@@ -137,7 +137,7 @@ body {
 /* section main */
 .hero {
   height: 100vh;
-  background: url('./image/main.jpg') no-repeat center center/cover;
+  background: url('./image/main.webp') no-repeat center center/cover;
   position: relative;
   display: flex;
   align-items: center;
@@ -419,7 +419,7 @@ html {
 .care-section {
   position: relative;
   height: 100vh;
-  background: url('./image/services.png') center/cover no-repeat;
+  background: url('./image/services.webp') center/cover no-repeat;
   padding: 80px 8%;
   display: flex;
   align-items: center;
@@ -640,7 +640,7 @@ html {
   position: relative;
   width: 95%;
   height: 90vh;
-  background: url('./image/main.jpg') no-repeat center center/cover;
+  background: url('./image/main.webp') no-repeat center center/cover;
   border-radius: 25px;   
   overflow: hidden;
   margin: 40px auto;
@@ -895,9 +895,7 @@ html {
 }
 
 
-/* ============================= */
-/* Responsive Design */
-/* ============================= */
+
 
 @media (max-width: 1200px) {
   .vision-header h1 {
@@ -1031,7 +1029,7 @@ html {
 /* section stat */
 
 .stats-section {
-  background: url('./image/stat.jpg') center/cover no-repeat;
+  background: url('./image/stat.webp') center/cover no-repeat;
   padding: 100px 5%;
   position: relative;
 }
@@ -1311,10 +1309,13 @@ html {
   font-size: 14px;
   cursor: pointer;
   transition: 0.3s;
+  color: white;
 }
 
+
+
 .social i:hover {
-  color: #ffffff;
+  color: rgb(2, 3, 52);
   transform: scale(1.2);
 }
 

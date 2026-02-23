@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Error Page</title>
+</head>
+
+<body>
+
+  <section class="error-section">
+    <div class="error-container">
+
+      <div class="error-content">
+        <h1>404</h1>
+        <h2>Oops! Page Not Found</h2>
+        <p>
+          The page you are looking for might have been removed,
+          had its name changed, or is temporarily unavailable.
+        </p>
+
+        <div class="error-buttons">
+          <a href="./index.html" class="btn-primary">Go Back Home</a>
+        </div>
+      </div>
+
+      <div class="error-image">
+        <img src="./image/error.jpg" alt="Doctor illustration">
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #eaf6ff, #ffffff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .error-section {
+      width: 100%;
+      padding: 40px;
+    }
+
+    .error-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      background: #ffffff;
+      padding: 50px;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .error-content h1 {
+      font-size: 120px;
+      color: #1abc9c;
+      margin-bottom: 10px;
+    }
+
+    .error-content h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #0a3d62;
+    }
+
+    .error-content p {
+      color: #555;
+      margin-bottom: 25px;
+      line-height: 1.6;
+      max-width: 400px;
+    }
+
+    .error-buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn-primary {
+      background: #1abc9c;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: #16a085;
+    }
+
+    .btn-secondary {
+      background: #0a3d62;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: #082a43;
+    }
+
+    .error-image img {
+      width: 400px;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    /* ===============================
+   RESPONSIVE MEDIA QUERIES
+================================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+  body {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .error-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .error-content h1 {
+    font-size: 90px;
+  }
+
+  .error-content p {
+    max-width: 100%;
+  }
+
+  .error-buttons {
+    justify-content: center;
+  }
+
+  .error-image img {
+    width: 300px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+
+  .error-section {
+    padding: 20px;
+  }
+
+  .error-container {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .error-content h1 {
+    font-size: 70px;
+  }
+
+  .error-content h2 {
+    font-size: 22px;
+  }
+
+  .error-content p {
+    font-size: 14px;
+  }
+
+  .error-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .error-image img {
+    width: 220px;
+  }
+}
+
+  </style>
+
+</body>
+
+</html>
