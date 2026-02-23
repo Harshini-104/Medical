@@ -91,10 +91,10 @@ body {
 
   .nav-menu {
     position: absolute;
-    top: 75px;
+    top: 70px;
     right: 0px;
-    width: 350px;
-    height: 500px;
+    width: 450px;
+    height: 800px;
     background: rgba(0, 152, 142, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 10px;
