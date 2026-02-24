@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical</title>
+  <link rel="stylesheet" href="./dashboard2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="nav-container">
+
+      <div class="logo">
+        <a href=""><img src="./image/logo-removebg-preview.webp" alt="MediCare Logo"></a>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About</a></li>
+          <li><a href="./service2.html">Services</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./dashboard2.html">Dashboard</a></li>
+          <li><a href="./contact2.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-btn">
+        <a href="./login.html" class="login-btn">Login</a>
+      </div>
+
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- section dashboard -->
+
+  <div class="dashboard">
+
+
+  
+  <div class="main-content">
+
+    <header class="topbar" data-aos="zoom-in">
+      <input type="text" placeholder="Search..." class="search-box">
+      <div class="profile">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <section class="cards" >
+      <div class="card" data-aos="zoom-in">
+        <h3>Total Patients</h3>
+        <p>1,245</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Total Doctors</h3>
+        <p>85</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Appointments</h3>
+        <p>320</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <h3>Revenue</h3>
+        <p>₹2,45,000</p>
+      </div>
+    </section>
+
+    <section class="table-section" data-aos="zoom-in">
+      <h2>Recent Appointments</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rahul Sharma</td>
+            <td>Dr. Meena</td>
+            <td>24 Feb 2026</td>
+            <td class="completed">Completed</td>
+          </tr>
+          <tr>
+            <td>Anjali Kumar</td>
+            <td>Dr. Raj</td>
+            <td>25 Feb 2026</td>
+            <td class="pending">Pending</td>
+          </tr>
+          <tr>
+            <td>Vikram Singh</td>
+            <td>Dr. Priya</td>
+            <td>26 Feb 2026</td>
+            <td class="cancelled">Cancelled</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+</div>
+
+<!-- Statistics Section -->
+<section class="statistics">
+  <div class="stats-header" data-aos="zoom-in">
+    <h2>Hospital Statistics</h2>
+    <select>
+      <option>This Month</option>
+      <option>Last Month</option>
+      <option>This Year</option>
+    </select>
+  </div>
+
+  <div class="stats-container">
+
+    <!-- Left Side - Graph -->
+    <div class="graph-box" data-aos="zoom-in">
+      <h3>Patient Visits Overview</h3>
+      <div class="graph">
+        <div class="bar" style="height: 60%;">
+          <span>Mon</span>
+        </div>
+        <div class="bar" style="height: 75%;">
+          <span>Tue</span>
+        </div>
+        <div class="bar" style="height: 50%;">
+          <span>Wed</span>
+        </div>
+        <div class="bar" style="height: 85%;">
+          <span>Thu</span>
+        </div>
+        <div class="bar" style="height: 65%;">
+          <span>Fri</span>
+        </div>
+        <div class="bar" style="height: 40%;">
+          <span>Sat</span>
+        </div>
+        <div class="bar" style="height: 30%;">
+          <span>Sun</span>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="mini-stats">
+      <div class="mini-card" data-aos="zoom-in">
+        <h4>New Patients</h4>
+        <p>+120</p>
+      </div>
+      <div class="mini-card" data-aos="zoom-in">
+        <h4>Surgeries</h4>
+        <p>35</p>
+      </div>
+      <div class="mini-card" data-aos="zoom-in">
+        <h4>Lab Tests</h4>
+        <p>210</p>
+      </div>
+      <div class="mini-card" data-aos="zoom-in">
+        <h4>Emergency Cases</h4>
+        <p>18</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ 
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    toggle.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+
+  <script>
+    // $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: false,
+      mirror: true,
+    });
+  </script>
+
+
+
+</body>
+
+</html>
