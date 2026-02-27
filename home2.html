@@ -379,7 +379,27 @@
 
     </div>
   </section>
+<script>
+  document.querySelector(".appointment-form").addEventListener("submit", function(e) {
+    e.preventDefault();
 
+    const inputs = this.querySelectorAll("input");
+    let isValid = true;
+
+    inputs.forEach(input => {
+      if (input.value.trim() === "") {
+        isValid = false;
+      }
+    });
+
+    if (!isValid) {
+      alert("⚠ Please fill the form completely!");
+    } else {
+      alert("✅ Your appointment request has been sent successfully!");
+      this.reset();
+    }
+  });
+</script>
   
 
   <!-- section blog -->

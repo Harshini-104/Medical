@@ -283,15 +283,110 @@ table tbody tr:nth-child(even) {
 }
 
 
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
+
+@media (max-width: 992px) {
+
   .main-content {
-    padding: 20px;
+    padding: 80px 25px;
   }
+
+  .search-box {
+    width: 200px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
 }
 
+
+
+@media (max-width: 768px) {
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar .menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .sidebar .menu li {
+    margin-bottom: 0;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .sidebar .logout {
+    margin-top: 0;
+  }
+
+  .main-content {
+    padding: 30px 20px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+
+  .table-section {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar .menu li {
+    width: 100%;
+  }
+
+  .profile span {
+    display: none; 
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+}
 /* section stat */
 
 
@@ -399,32 +494,88 @@ table tbody tr:nth-child(even) {
 
 
 
+
 @media (max-width: 992px) {
+
   .stats-container {
     flex-direction: column;
+    gap: 25px;
+  }
+
+  .graph {
+    height: 180px;
   }
 
   .mini-stats {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
+
+  .statistics {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .stats-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .stats-header h2 {
+    font-size: 20px;
+  }
+
+  .stats-header select {
+    width: 100%;
+  }
+
   .graph {
     height: 160px;
+    padding: 10px;
   }
 
   .bar {
-    width: 18px;
+    width: 22px;
+  }
+
+  .bar span {
+    font-size: 10px;
+    bottom: -20px;
   }
 
   .mini-stats {
     grid-template-columns: 1fr;
   }
 
-  .stats-header {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+}
+
+
+@media (max-width: 480px) {
+
+  .statistics {
+    margin: 10px;
+    padding: 15px;
   }
+
+  .graph {
+    height: 140px;
+  }
+
+  .bar {
+    width: 18px;
+  }
+
+  .mini-card h4 {
+    font-size: 13px;
+  }
+
+  .mini-card p {
+    font-size: 16px;
+  }
+
 }
